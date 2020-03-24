@@ -12,8 +12,8 @@
     "build": "react-scripts build",
     "build-with-electron": "yarn build && fcli copy electron build",
     "test": "tsc && react-scripts test",
-    "package": " yarn build && cross-env ELECTRON=true electron-builder build --mwl",
-    "package-win": "yarn build-with-electron && cross-env ELECTRON=true electron-builder build --win",
+    "package": " yarn build-with-electron && electron-builder build --mwl",
+    "package-win": "yarn build-with-electron && electron-builder build --win",
     "postinstall": "electron-builder install-app-deps"
   },
   "eslintConfig": {
